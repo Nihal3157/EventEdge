@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <style>
+      * { 
+      margin: 0;
+       padding: 0;
+        box-sizing: border-box;
+       }
+       body{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #b1c9ed;
+        animation-name: example;
+        animation-duration: 20s;
+       }
+       @keyframes example {
+  0%   {background-color: rgb(222, 125, 125);}
+  10%   {background-color: cadetblue;}
+  20%   {background-color: rgb(153, 153, 213);}
+  30%   {background-color: rgb(162, 119, 202);}
+  40%  {background-color: rgb(205, 205, 133);}
+  50%  {background-color: burlywood;}
+  60% {background-color: rgb(112, 210, 112);}
+  70%   {background-color: rgb(212, 154, 112);}
+  80%   {background-color: cornflowerblue;}
+  90%   {background-color: rgb(135, 116, 69);}
+  100%   {background-color: darkgrey;}
+}
+
+      h2{
+        margin-left: 0px;
+        margin-right: 275px;
+        padding: 10px;
+      }
+      
+     
+      nav {
+      background: #1a202c;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo {
+       font-size: 1.5rem; 
+       font-weight: bold;
+       }
+    nav ul { 
+      list-style: none;
+       display: flex; 
+       gap: 60px;
+       }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    nav ul li a:hover {
+       color: #90cdf4; 
+      }
+       #schedule{
+        margin-top: 200px;
+        margin-left: 295px;
+        text-align: center;
+        margin-bottom: 200px;
+       }
+        
+      table{
+        width: 950px;
+        box-shadow: 15px 15px 40px lightblue inset;
+       
+      }
+      .footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #aaa;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+/* Tablet screens (≤768px) */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #schedule {
+    margin: 60px auto;
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
+
+/* Mobile screens (≤480px) */
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 10px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #schedule {
+    margin: 40px auto;
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  table {
+    width: 100%;
+    font-size: 12px;
+    box-shadow: none;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+
+  .footer-container {
+    padding: 0 10px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+    </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">EventEdge</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="event.html">Events</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="signup.html">Register</a></li>
+    </ul>
+  </nav>
+ 
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <table border="5" cellspacing="4">
+          <tr class="ab">
+            <th>Date</th>
+            <th>Time</th>
+            <th>Session</th>
+            <th>Speaker</th>
+            <th>Topic</th>
+            <th>Location</th>
+          </tr>
+          <tr>
+            <td>01-06-2025</td>
+            <td>9:00-10:00 A.M.</td>
+            <td>AI</td>
+            <td>Alex R.</td>
+            <td>The Future of AI in machine learning</td>
+            <td>New York,NY</td>
+          </tr>
+          <tr>
+            <td>12-05-2025</td>
+            <td>10:30-11:30 A.M.</td>
+            <td>Design thinking </td>
+            <td>Priya K.</td>
+            <td>Solving real world problem with degign thinking.</td>
+            <td>Austin,TX</td>
+          </tr>
+          <tr>
+            <td>30-04-2025</td>
+            <td>12:30-01:30 A.M.</td>
+            <td>Health seminar</td>
+            <td>James L.</td>
+            <td>We care for your health</td>
+            <td>San Diego,CA</td>
+          </tr>
+        </table>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <p>&copy; 2025 Your Company. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">About</a>
+            <a href="contect.html">Contact</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </footer>
+      
+      </body>
+</html>

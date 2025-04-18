@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Thinking</title>
+    <style>
+         *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  
+}
+body{
+    background-color: #b1c9ed;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+    
+
+           .card-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  
+    margin-top: 100px;
+
+}
+.card{
+    border-radius: 10px;
+    background-color: rgb(248, 219, 184);
+    width: 500px;
+    height: 270px;
+    overflow: hidden;
+}
+.card-contain{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+.card-contain p{
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(85, 113, 179);
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+h6{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(224, 107, 107);
+    
+    padding-top: 40px;
+}.card-container1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 515px;
+    
+
+}
+.card1{
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+}
+img{
+    width: 100%;
+    height: 95%;
+}
+.card-container4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 100px;
+
+}
+.card4{
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+}.card-container3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 100px;
+
+}
+.card3{
+    border-radius: 10px;
+    background-color: rgb(248, 219, 184);
+    width: 500px;
+    height: 560px;
+    overflow: hidden;
+}
+.card-contain3{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+} 
+nav {
+      background: #1a202c;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo {
+       font-size: 1.5rem; 
+       font-weight: bold;
+       }
+    nav ul { 
+      list-style: none;
+       display: flex; 
+       gap: 60px;
+       }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    nav ul li a:hover {
+       color: #90cdf4; 
+      }
+
+      .footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #aaa;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+  /* Responsive Styles */
+
+  /* Tablets (768px and below) */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav ul {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    h6 {
+      font-size: 24px;
+      padding-top: 30px;
+    }
+
+    .card-container,
+    .card-container3,
+    .card-container4 {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .card,
+    .card3,
+    .card4,
+    .card1 {
+      width: 90%;
+      height: auto;
+    }
+
+    .card-contain3 p,
+    .card-contain p {
+      font-size: 15px;
+      text-align: justify;
+    }
+
+    .card-container1 {
+      margin: 50px auto;
+      justify-content: center;
+    }
+
+    .footer-links a {
+      margin: 5px;
+    }
+  }
+
+  /* Mobile (480px and below) */
+  @media (max-width: 480px) {
+    nav {
+      padding: 10px 20px;
+    }
+
+    nav .logo {
+      font-size: 1.2rem;
+    }
+
+    nav ul {
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .card-contain p,
+    .card-contain3 p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    h6 {
+      font-size: 20px;
+      padding-top: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      margin: 0 auto;
+    }
+  }
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">EventEdge</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="signup.html">Register</a></li>
+          
+        </ul>
+      </nav>
+    <h6>Design Thinking Workshop</h6>
+    <header>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-contain">
+                    <p><b>What Is Design Thinking?</b><br>Design thinking is a problem-solving approach that focuses on understanding users’ needs and creating innovative solutions. It involves five key steps: empathize, define, ideate, prototype, and test. By putting the user at the center of the process, design thinking helps teams come up with creative ideas that truly meet people’s needs. In this article, we’ll explore what design thinking is, why it’s important, and how you can use it to improve your projects.</p>
+                    
+                    </div>
+                </div>
+            </header>
+            <main>
+
+                <div class="card-container1">
+                    <div class="card1">
+                        <img src="design1.jpg">
+                    </div>
+                </main>
+                <main>
+
+                    <div class="card-container3">
+                        <div class="card3">
+                            
+                            <div class="card-contain3">
+                                
+                                <p style="color:rgb(85, 113, 179) ; font-weight: bold;"><b>What is the Purpose of Design Thinking?</b>
+                                    <br> 1.Understanding Users: Design Thinking emphasizes empathy with users to deeply understand their needs, motivations, and behaviors. This understanding helps in creating solutions that truly address users’ <br>
+                                    
+                                    2.Creative Problem Solving: It encourages divergent thinking to explore a wide range of possible solutions, followed by convergent thinking to refine and select the best. <br>
+                                    
+                                    3.Iterative Process: Design Thinking is iterative, allowing for experimentation and learning from failure. It involves rapid prototyping and testing to quickly gather feedback and refine ideas. <br>
+                                    
+                                    4.Collaboration: It fosters interdisciplinary collaboration, bringing together individuals with diverse backgrounds and expertise to generate innovative solutions. <br>
+                                    
+                                    5.Focus on Action: Design Thinking emphasizes taking action and creating tangible solutions rather than getting stuck in analysis paralysis. It encourages a bias towards action and experimentation. <br>
+                                    
+                                    6.Adaptability: Design Thinking is adaptable and can be applied to various contexts and problems, from product design to organizational change.</p>
+                                </div>
+                            </div>
+                        </main>
+                    <footer>
+                        
+                        <div class="card-container4">
+                            
+                            <div class="card4">
+                                <img src="design2.jpg">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </footer>
+                <footer class="footer">
+                    <div class="footer-container">
+                      <p>&copy; 2025 Your Company. All rights reserved.</p>
+                      <div class="footer-links">
+                        <a href="#">About</a>
+                        <a href="contect.html">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                      </div>
+                    </div>
+                  </footer>
+                  
+</body>
+</html>
